@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build": "browserify src/main.js -o dist/game.js",
+    "watch": "watchify src/main.js -o dist/game.js --debug --verbose"
+  },
+  "devDependencies": {
+    "phaser": "^2.6.2"
+  }
+}

@@ -43,3 +43,5 @@ Weapon.prototype.fire = function (x, y) {
         this.nextFire = this.game.time.time + this.fireRate;
     }
 };
+
+module.exports.Weapon = Weapon;

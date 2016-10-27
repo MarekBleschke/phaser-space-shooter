@@ -41,7 +41,7 @@ Player.prototype.update = function() {
     }
 
     if (this.cursors.space.isDown) {
-        this.weapon.fire(this.x, this.y);
+        this.weapon.fire(this.x + this.width / 2 - 4, this.y - 12);
     }
 };
 
@@ -51,3 +51,5 @@ Player.prototype.handleHit = function () {
         this.kill();
     }
 };
+
+module.exports = Player;
