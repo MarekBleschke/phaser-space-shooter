@@ -1,14 +1,15 @@
 # Features
+* player can shoot after death
 * use phaser.game.rnd for random number generator
 * reuse bullets (group.getFirstExists, sprite.reset)
 * make player initialisable / reinitialisable
 * make enemy group initialisable / reinitialisable
-* separate code for handling top game texts
 * scoreboard
 * split files to resemble example phaser project
-* better firing logic
+* better enemy firing logic
 
 # DONE
+* separate code for handling top game texts
 * basic player lives mechanism
 * basic player object
 * all player logic in player object
