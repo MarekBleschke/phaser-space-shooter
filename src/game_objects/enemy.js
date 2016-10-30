@@ -9,7 +9,8 @@ class Enemy extends Phaser.Sprite {
     }
 
     update () {
-        if (Math.random() > (1 - 1 / 1000)) {
+        let canShoot = this.game.rnd.integerInRange(0, Math.max(80, 40 * this.parent.countLiving())) === 0;
+        if (canShoot) {
             this.weapon.fire(
                 this.x + this.width / 2 - 1,
                 this.y + this.height + 2

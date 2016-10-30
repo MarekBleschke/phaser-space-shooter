@@ -3,7 +3,7 @@ var Waves = require('./../game_objects/enemy');
 var Player = require('./../game_objects/player');
 var StatsBar = require('./../game_objects/stats_bar');
 
-class playState {
+class PlayState {
     create () {
         this.cursors = this.game.input.keyboard.addKeys({
             'left': Phaser.KeyCode.LEFT,
@@ -48,4 +48,4 @@ class playState {
     }
 }
 
-module.exports = playState;
+module.exports = PlayState;

@@ -34,12 +34,14 @@ class Player extends Phaser.Sprite {
     update () {
         this.body.velocity.x = 0;
 
-        if (this.lives > 0) {
-            if (this.cursors.left.isDown) {
-                this.body.velocity.x = -this.speed;
-            } else if (this.cursors.right.isDown) {
-                this.body.velocity.x = this.speed;
-            }
+        if (!this.alive) {
+            return;
+        }
+
+        if (this.cursors.left.isDown) {
+            this.body.velocity.x = -this.speed;
+        } else if (this.cursors.right.isDown) {
+            this.body.velocity.x = this.speed;
         }
 
         if (this.cursors.space.isDown) {

@@ -1,4 +1,4 @@
-class loadState {
+class LoadState {
     preload (game) {
         game.load.image('player', 'assets/player.png');
         game.load.image('enemy', 'assets/enemy.png');
@@ -8,8 +8,8 @@ class loadState {
     }
 
     create (game) {
-        game.state.start('play');
+        game.state.start('startScreen');
     }
 }
 
-module.exports = loadState;
+module.exports = LoadState;

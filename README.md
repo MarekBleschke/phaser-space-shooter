@@ -2,4 +2,4 @@
 
 A small game project which I make just for fun and to learn a little bit about phaser.
 
-Serve it using web server, i.e. `python -m SimpleHTTPServer`.
+To start game run `npm run start` and navigate to http://localhost:8080.

@@ -4,10 +4,12 @@ window.Phaser = require('phaser/build/custom/phaser-split');
 
 var game = new Phaser.Game(800, 600, Phaser.CANVAS, '');
 
-var loadState = require('./game_states/load');
-var playState = require('./game_states/play');
-var scoreboardState = require('./game_states/scoreboard');
+var LoadState = require('./game_states/load');
+var PlayState = require('./game_states/play');
+var ScoreboardState = require('./game_states/scoreboard');
+var StartScreenState = require('./game_states/start_screen');
 
-game.state.add('play', playState);
-game.state.add('scoreboard', scoreboardState);
-game.state.add('load', loadState, true);
+game.state.add('startScreen', StartScreenState);
+game.state.add('play', PlayState);
+game.state.add('scoreboard', ScoreboardState);
+game.state.add('load', LoadState, true);
