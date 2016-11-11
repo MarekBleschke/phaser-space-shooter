@@ -18,6 +18,7 @@ class Bullet extends Phaser.Sprite {
 
 class Weapon extends Phaser.Group {
     constructor(game, bulletSpeed, fireRate, bulletImage) {
+        // TODO: do we need to pass game object or do we have it in this?
         super(game, game.world, 'Weapon', false, true, Phaser.Physics.ARCADE);
 
         this.nextFire = 0;
