@@ -69,6 +69,10 @@ class Player extends Phaser.Sprite {
             storage.setObject('scores', scores);
         }
     }
+
+    killBullets () {
+        this.weapon.callAllExists('kill', true);
+    }
 }
 
 module.exports = Player;
